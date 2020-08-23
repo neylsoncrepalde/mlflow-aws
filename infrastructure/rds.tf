@@ -5,7 +5,7 @@ resource "aws_db_instance" "default" {
   engine_version       = "5.6"
   instance_class       = "db.t2.micro"
   name                 = "mlflow"
-  username             = "mlflow"
+  username             = var.master_username
   password             = var.master_password
   apply_immediately    = true
   port                 = 3306

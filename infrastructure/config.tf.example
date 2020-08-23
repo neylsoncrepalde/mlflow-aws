@@ -31,6 +31,10 @@ variable "master_password" {
    default = "xxxxxxxxxxxxx"
 }
 
+variable "master_username" {
+   default = "xxxxxxxxx"
+}
+
 variable "account" {
    default = "xxxxxxxxxxxxxxx"
 }
