@@ -14,6 +14,6 @@ echo "All set up. Now, you have to exit and log in again for the changes to happ
 
 echo "See also the Environment Variables you will have to set up"
 echo ""
-cat build_and_push.sh
+cat build_and_run.sh
 
 echo ""
