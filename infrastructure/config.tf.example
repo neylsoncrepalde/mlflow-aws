@@ -1,0 +1,44 @@
+variable "aws_region" {
+   default = "us-east-1"
+}
+
+variable "availability_zones" {
+   type    = list(string)
+   default = ["us-east-1a", "us-east-1b", "us-east-1c"]
+}
+
+variable "project_name" {
+   default = "xxxxxxxx"
+}
+
+variable "stage" {
+   default = "dev"
+}
+
+variable "base_cidr_block" {
+   default = "10.0.0.0"
+}
+
+variable "log_group_name" {
+   default = "ecs/fargate"
+}
+
+variable "image_version" {
+   default = "latest"
+}
+
+variable "master_password" {
+   default = "xxxxxxxxxxxxx"
+}
+
+variable "account" {
+   default = "xxxxxxxxxxxxxxx"
+}
+
+variable "tf_state_bucket" {
+   default = "xxxxx-xxxxx"
+}
+
+variable "tf_state_key" {
+   default = "xxxxxxxxxxx"
+}
