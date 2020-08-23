@@ -83,7 +83,7 @@ Then, build the image and start the container with
 
 ```bash
 cd mlflow-aws
-sh build_and_push.sh
+sh build_and_run.sh
 ```
 
 Go to your browser and type http://<YOUR_EC2_PUBLIC_DNS>:5000. MLFlow server will be listening on port 5000. 
