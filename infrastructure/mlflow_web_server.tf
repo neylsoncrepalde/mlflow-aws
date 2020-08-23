@@ -1,7 +1,6 @@
 resource "aws_security_group" "sg" {
   name        = "mlflow-server-sg"
   description = "Allow inbound traffic on port 5000"
-  vpc_id      = aws_vpc.main.id
 
   ingress {
     description = "Allow inbound traffic on port 5000"
