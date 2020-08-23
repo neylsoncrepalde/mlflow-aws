@@ -18,6 +18,8 @@ This is what you are going to build.
 
 # 1 - Build infrastructure on aws
 
+First, you have to rename `config.tf.example` to `config.tf` and fulfill it with your real variables' values.
+
 Use terraform to build the infrastructure:
 
 ```bash
