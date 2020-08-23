@@ -2,3 +2,4 @@ config.tf
 .terraform/
 *.tfstate
 *.backup
+infrastructure/provider.tf
