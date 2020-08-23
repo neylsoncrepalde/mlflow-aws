@@ -38,11 +38,3 @@ variable "master_username" {
 variable "account" {
    default = "xxxxxxxxxxxxxxx"
 }
-
-variable "tf_state_bucket" {
-   default = "xxxxx-xxxxx"
-}
-
-variable "tf_state_key" {
-   default = "xxxxxxxxxxx"
-}
