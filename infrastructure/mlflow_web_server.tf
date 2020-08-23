@@ -48,5 +48,5 @@ resource "aws_instance" "web" {
   instance_type = "t2.micro"
   security_groups = [aws_security_group.sg.name]
   associate_public_ip_address = true
-  key_name      = "xxxxxxxx"
+  key_name      = var.key_pair_name
 }

@@ -3,4 +3,3 @@ config.tf
 *.tfstate
 *.backup
 infrastructure/provider.tf
-infrastructure/mlflow_web_server.tf

@@ -38,3 +38,7 @@ variable "master_username" {
 variable "account" {
    default = "xxxxxxxxxxxxxxx"
 }
+
+variable "key_pair_name" {
+   default = "xxxxxxxxxx"
+}
