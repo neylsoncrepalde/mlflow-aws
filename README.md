@@ -43,28 +43,12 @@ ssh -i "<YOUR_KEY_PAIR>.pem" ubuntu@<YOUR_EC2_PUBLIC_DNS>
 
 Don't forget to substitute YOUR_KEY_PAIR and YOUR_EC2_PUBLIC_DNS for you actual key pair and public DNS.
 
-Once inside the server, first, we will clone the repo and use `install_docker.sh` to 
-update the OS and install docker.
+Once inside the server, first, we will clone the repo
 
 ```bash
 git clone https://github.com/neylsoncrepalde/mlflow-aws.git
 cd mlflow-aws
-sh install_docker.sh
 ```
-
-When the installation is ready, you have to log out and log back in so ubuntu user has docker permissions.
-
-```
-exit
-```
-
-and then
-
-```
-ssh -i "<YOUR_KEY_PAIR>.pem" ubuntu@<YOUR_EC2_PUBLIC_DNS>
-```
-
-again.
 
 # 3 - Build the image and start the container
 
@@ -84,7 +68,6 @@ or you can set them inside .bashrc or in any manner you like.
 Then, build the image and start the container with
 
 ```bash
-cd mlflow-aws
 sh build_and_run.sh
 ```
 
