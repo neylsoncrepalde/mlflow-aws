@@ -38,3 +38,15 @@ variable "key_pair_name" {
 variable "vpc_id" {
   default = "vpc-xxxxxxxxxxxx"
 }
+
+variable "aws_access" {
+   default = "XXXXXXXXXXXXXXX"
+}
+
+variable "aws_secret" {
+   default = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+}
+
+variable "log_group_name" {
+   default = "ecs/fargate"
+}

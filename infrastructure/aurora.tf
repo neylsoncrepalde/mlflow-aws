@@ -1,7 +1,3 @@
-data "aws_vpc" "selected" {
-  id = var.vpc_id
-}
-
 resource "aws_security_group" "db" {
   name        = "mlflow-db-sg"
   description = "Allow Aurora requests"

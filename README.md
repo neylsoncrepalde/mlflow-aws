@@ -56,8 +56,10 @@ Now, you have to set up some important environment variables for it to run. You 
 
 ```
 export IMAGE=mlflowserver
+export AWS_ACCOUNT=<YOUR_ACCOUNT_NUMBER>
 export AWS_ACCESS=<YOUR_AWS_ACCESS_KEY_ID>
 export AWS_SECRET=<YOUR_AWS_SECRET_ACCESS_KEY>
+export AWS_DEFAULT_REGION=us-east-1
 export DB_PASS=<YOUR_MASTER_DB_PASSWORD>
 export BUCKET_NAME=<YOUR_BUCKET_NAME>
 export DB_ENDPOINT=<YOUR_DB_ENDPOINT>:3306
@@ -68,15 +70,15 @@ or you can set them inside .bashrc or in any manner you like.
 Then, build the image and start the container with
 
 ```bash
-sh build_and_run.sh
+sh build_and_push.sh
 ```
 
-Go to your browser and type `http://<YOUR_EC2_PUBLIC_DNS>:5000`. MLFlow server will be listening on port 5000. 
+Go to your browser and type `http://<YOUR_ALB_PUBLIC_DNS>:5000`. MLFlow server will be listening on port 5000. 
 
 To set mlflow experiments and runs to this tracking server, in your python code do
 
 ```python
-mlflow.set_tracking_uri("http://<YOUR_EC2_PUBLIC_DNS>:5000")
+mlflow.set_tracking_uri("http://<YOUR_ALB_PUBLIC_DNS>:5000")
 ```
 
 To start a new experiment or retrieve an old one, do
