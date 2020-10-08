@@ -97,11 +97,15 @@ resource "aws_ecs_service" "web_server_service" {
     name = "${var.project_name}-${var.stage}-web-server"
     cluster = aws_ecs_cluster.ecs_cluster.id
     task_definition = aws_ecs_task_definition.web_server.arn
-    desired_count = 1
-    launch_type = "FARGATE"
+    desired_count = 2
     deployment_maximum_percent = 200
     deployment_minimum_healthy_percent = 100
     health_check_grace_period_seconds = 60
+
+    capacity_provider_strategy {
+        capacity_provider = "FARGATE_SPOT"
+        weight            = 100
+    }
 
     network_configuration {
         security_groups  = [aws_security_group.web_server_ecs_internal.id]

@@ -55,8 +55,8 @@ resource "aws_ecs_task_definition" "web_server" {
   network_mode = "awsvpc"
   execution_role_arn = aws_iam_role.ecs_task_iam_role.arn
   requires_compatibilities = ["FARGATE"]
-  cpu = "1024" # the valid CPU amount for 2 GB is from from 256 to 1024
-  memory = "2048"
+  cpu = "512" # the valid CPU amount for 2 GB is from from 256 to 1024
+  memory = "1024"
   container_definitions = <<EOF
 [
   {
