@@ -1,12 +1,7 @@
 // aws_rds_cluster
-output "mysql_id" {
-  description = "The ID of the cluster"
-  value       = aws_db_instance.default.id
-}
-
-output "mysql_endpoint" {
+output "aurora_endpoint" {
   description = "The cluster endpoint"
-  value       = aws_db_instance.default.endpoint
+  value       = aws_rds_cluster.default.endpoint
 }
 
 output "ec2_public_dns" {

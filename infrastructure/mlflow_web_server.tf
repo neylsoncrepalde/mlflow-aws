@@ -49,4 +49,5 @@ resource "aws_instance" "web" {
   security_groups = [aws_security_group.sg.name]
   associate_public_ip_address = true
   key_name      = var.key_pair_name
+  user_data     = file("install_docker.sh")
 }
