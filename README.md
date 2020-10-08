@@ -52,10 +52,11 @@ cd mlflow-aws
 
 # 3 - Build the image and start the container
 
-Now, you have to set up some important environment variables for it to run. You can use export command
+Now, you have to set up some important environment variables for it to run. You can use export command.
+Remember to use the image as mlflow-\<STAGE\>. If stage is dev, mlflow-dev. 
 
 ```
-export IMAGE=mlflowserver
+export IMAGE=mlflow-dev
 export AWS_ACCOUNT=<YOUR_ACCOUNT_NUMBER>
 export AWS_ACCESS=<YOUR_AWS_ACCESS_KEY_ID>
 export AWS_SECRET=<YOUR_AWS_SECRET_ACCESS_KEY>

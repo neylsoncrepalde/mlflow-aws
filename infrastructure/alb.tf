@@ -15,7 +15,7 @@ resource "aws_alb_target_group" "web_server" {
         interval = 10
         port = 5000
         protocol = "HTTP"
-        path = "/"
+        path = "/health"
         timeout = 5
         healthy_threshold = 5
         unhealthy_threshold = 3

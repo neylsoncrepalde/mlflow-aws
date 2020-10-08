@@ -50,3 +50,11 @@ variable "aws_secret" {
 variable "log_group_name" {
    default = "ecs/fargate"
 }
+
+variable "subnet1_id" {
+   default = "subnet-xxxxxxxx"
+}
+
+variable "subnet2_id" {
+   default = "subnet-xxxxxxxxx"
+}
