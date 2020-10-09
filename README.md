@@ -72,6 +72,16 @@ mlflow.set_experiment("EXPERIMENT_NAME")
 
 That's it! Now you have an MLFlow tracking server running on AWS. If you need more computing power, you can easily configure a auto-scaling group within the service. 
 
+# 3 - Clean up
+
+If you want to clean up everything you created, just type:
+
+```bash
+terraform destroy
+```
+
+and `terraform` will do it's work! 
+
 # To Do
 
 This is a work in progress so there are a few things we would still like to improve:
