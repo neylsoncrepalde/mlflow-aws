@@ -97,7 +97,7 @@ resource "aws_ecs_service" "web_server_service" {
     name = "${var.project_name}-${var.stage}-web-server"
     cluster = aws_ecs_cluster.ecs_cluster.id
     task_definition = aws_ecs_task_definition.web_server.arn
-    desired_count = 2
+    desired_count = 1
     deployment_maximum_percent = 200
     deployment_minimum_healthy_percent = 100
     health_check_grace_period_seconds = 60
