@@ -1,7 +1,7 @@
 echo "We need those environment variables:"
 echo "IMAGE, AWS_ACCESS, AWS_SECRET, DB_PASS, BUCKET_NAME and DB_ENDPOINT"
 
-docker build -t $IMAGE:latest . --build-arg AWS_ACCESS_KEY_ID=$AWS_ACCESS --build-arg AWS_SECRET_ACCESS_KEY=$AWS_SECRET --build-arg DB_PWD=$DB_PASS
+docker build -t $IMAGE:latest . --build-arg AWS_ACCESS=${AWS_ACCESS} --build-arg AWS_SECRET=${AWS_SECRET} --build-arg DB_PWD=${DB_PASS}
 
 echo "Image ${IMAGE}:latest built. Let's run it"
 
