@@ -1,6 +1,6 @@
 # MLFlow on AWS
 
-This is a project to deploy MLFlow on AWS in a microservices architecture using ECS FARGATE and AURORA serverless DB. If you want to deploy MLFLow to a EC2 instance, check out the [ec2] branch.
+This is a project to deploy MLFlow on AWS in a microservices architecture using ECS FARGATE and AURORA serverless DB. If you want to deploy MLFLow to a EC2 instance, check out the [ec2](https://github.com/neylsoncrepalde/mlflow-aws/tree/ec2) branch.
 
 ## Requirements
 
